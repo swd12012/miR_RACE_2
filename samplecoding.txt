@@ -1,0 +1,5 @@
+P1	855OD	P1.sorted.bam	Injected
+P2	855OS	P2.sorted.bam	Injected
+P3	857OD	P3.sorted.bam	Injected
+P4	858OD	P4.sorted.bam	Uninjected
+P5	858OS 	P5.sorted.bam	Uninjected
