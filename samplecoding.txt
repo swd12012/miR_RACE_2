@@ -1,3 +1,4 @@
+Sample	Eye	File	Treatment
 P1	855OD	P1.sorted.bam	Injected
 P2	855OS	P2.sorted.bam	Injected
 P3	857OD	P3.sorted.bam	Injected

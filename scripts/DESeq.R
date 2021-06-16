@@ -8,7 +8,7 @@ library( "RColorBrewer" )
 library( "genefilter" )
 
 #Read in sample coding table
-sampleInfo <- read.table('design.txt', header=T)
+sampleInfo <- read.table('samplecoding.txt', header=T)
 
 #Read in count data
 countdata <- read.table('data/out/counts.txt', header=T, row.names=1)
@@ -30,7 +30,7 @@ countdata2 <- countdata[,c(1:3,5)]
 #annotated_countdata <- merge(countdata,annotations, by.x='row.names',by.y='Gene.stable.ID')
 
 #Create DESeq2 object
-dds <- DESeqDataSetFromMatrix(countData=countdata, colData=sampleInfo, design=~Condition)
+dds <- DESeqDataSetFromMatrix(countData=countdata, colData=sampleInfo, design=~Treatment)
 
 dds <- DESeq(dds)
 res <- results(dds)
